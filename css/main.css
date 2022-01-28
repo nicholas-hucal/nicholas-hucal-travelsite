@@ -15,9 +15,6 @@
     font-size: 2rem;
     text-transform: capitalize;
 }
-.hero__description {
-
-}
 .hero__cta-button {
     text-decoration: none;
     color: #FFFFFF;
@@ -36,7 +33,7 @@
     width: 60%;
 }
 .recommendations {
-    padding: 2rem 5rem;
+    padding: 2rem 5rem 3rem 5rem;
 }
 
 .recommendations__heading {

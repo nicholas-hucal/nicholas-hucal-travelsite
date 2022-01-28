@@ -1,0 +1,113 @@
+html {
+    font-family: Verdana, sans-serif;
+}
+body {
+    padding: 0;
+    margin: 0;
+    padding-top: 4.25rem;
+}
+
+/* MAIN-NAV */
+.main-nav {
+    position: fixed;
+    top: 0;
+    margin: 0;
+    background-color: #FFFFFF;
+    width: 100%;
+    display: flex;
+    padding: 1.25rem 5rem;
+    justify-content: space-between;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.main-nav__home-link {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: #335576;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.main-nav__list {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.main-nav__list-item {
+    padding: 0 0.75rem;
+}
+
+.main-nav__list-item-link {
+    color: #335576;
+    text-decoration: none;
+    box-sizing: border-box;
+    padding-bottom: 0.5rem;
+    border-bottom: 4px solid #FFFFFF;
+}
+.main-nav__list-item-link--active {
+    border-bottom: 4px solid #DB7A4E;
+}
+.main-nav__list-item-link:hover {
+    border-bottom: 4px solid #335576;
+}
+/* MAIN-NAV END */
+/* MAIN-FOOTER */
+.main-footer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 3rem 17.5rem;
+    box-sizing: border-box;
+}
+.main-footer__column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.main-footer__hours-container {
+    display: flex;
+    justify-content: space-between;
+}
+.main-footer__hours {
+    margin-right: 2.5rem;
+    text-transform: uppercase;
+}
+.main-footer__heading {
+    font-size: 2rem;
+    text-transform: capitalize;
+    color: #335576;
+    margin: 0 0 2rem 0;
+}
+.main-footer__sub-heading {
+    margin: 0;
+    padding: 0;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: #DB7A4E;
+}
+.main-footer__details {
+    text-transform: capitalize;
+    font-size: 1.15rem;
+    color: #335576;
+    margin-bottom: 0;
+    margin-top: 0.75rem;
+}
+.main-footer__email-link {
+    color: #335576;
+    text-transform: lowercase; 
+    text-decoration: none;
+}
+.main-footer__social-links {
+    display: flex;
+    justify-content: space-between;
+}
+.main-footer__social-link {
+    margin-right: 2.5rem;
+}
+.main-footer__social-image {
+    height: 2rem;
+}
+/* MAIN-FOOTER END */

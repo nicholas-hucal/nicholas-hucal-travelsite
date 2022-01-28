@@ -4,7 +4,7 @@ html {
 body {
     padding: 0;
     margin: 0;
-    padding-top: 4.25rem;
+    padding-top: 3rem;
 }
 
 /* MAIN-NAV */
@@ -15,7 +15,7 @@ body {
     background-color: #FFFFFF;
     width: 100%;
     display: flex;
-    padding: 1.25rem 5rem;
+    padding: 1rem 5rem;
     justify-content: space-between;
     overflow: hidden;
     box-sizing: border-box;
@@ -25,7 +25,7 @@ body {
     padding: 0;
     text-decoration: none;
     color: #335576;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-weight: 700;
 }
 .main-nav__list {
@@ -33,7 +33,7 @@ body {
     display: flex;
     padding: 0;
     margin: 0;
-    font-size: 1.1rem;
+    font-size: 0.85rem;
 }
 
 .main-nav__list-item {
@@ -59,8 +59,9 @@ body {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    padding: 3rem 17.5rem;
+    padding: 3rem 12.5rem;
     box-sizing: border-box;
+    background-color: #FEFAF5;
 }
 .main-footer__column {
     display: flex;
@@ -76,7 +77,7 @@ body {
     text-transform: uppercase;
 }
 .main-footer__heading {
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-transform: capitalize;
     color: #335576;
     margin: 0 0 2rem 0;
@@ -84,13 +85,13 @@ body {
 .main-footer__sub-heading {
     margin: 0;
     padding: 0;
-    font-size: 0.75rem;
+    font-size: 0.6rem;
     text-transform: uppercase;
     color: #DB7A4E;
 }
 .main-footer__details {
     text-transform: capitalize;
-    font-size: 1.15rem;
+    font-size: 0.85rem;
     color: #335576;
     margin-bottom: 0;
     margin-top: 0.75rem;
@@ -106,8 +107,32 @@ body {
 }
 .main-footer__social-link {
     margin-right: 2.5rem;
+    padding-top: 0.5rem;
+}
+.main-footer__social-link--no-margin-right {
+    margin-right: 0rem;
 }
 .main-footer__social-image {
     height: 2rem;
 }
 /* MAIN-FOOTER END */
+
+/* CARD */
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 2rem 7.5rem;
+    box-sizing: border-box;
+}
+.card-container__card {
+    width: 26%;
+    height: 22.5rem;
+    padding: 1rem 1rem;
+    display: flex;
+    border-radius: 0.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
+    text-decoration: none;
+}
+/* CARD END */

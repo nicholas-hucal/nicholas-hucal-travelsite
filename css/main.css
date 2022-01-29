@@ -4,6 +4,7 @@
     padding: 4rem 5rem;
     color: #335576;
     background-color: #FEFAF5;
+    text-align: left;
 }
 .hero__details {
     display: flex;

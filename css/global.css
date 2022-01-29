@@ -19,6 +19,7 @@ body {
     justify-content: space-between;
     overflow: hidden;
     box-sizing: border-box;
+    z-index: 1;
 }
 .main-nav__home-link {
     margin: 0;
@@ -74,7 +75,7 @@ body {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    padding: 3rem 12.5rem;
+    padding: 3rem 12.5rem 2.25rem 12.5rem;
     box-sizing: border-box;
     background-color: #FEFAF5;
 }
@@ -90,6 +91,7 @@ body {
 .main-footer__hours {
     margin-right: 2.5rem;
     text-transform: uppercase;
+    padding-bottom: 0.75rem;
 }
 .main-footer__heading {
     font-size: 1.5rem;
@@ -113,6 +115,7 @@ body {
 }
 .main-footer__email-link {
     color: #335576;
+    display: inline-block;
     text-transform: lowercase; 
     text-decoration: none;
 }
@@ -130,6 +133,24 @@ body {
 .main-footer__social-image {
     height: 1.5rem;
 }
+.main-footer__social-link,
+.main-footer__email-link,
+.main-footer__hours {
+    border-bottom: 4px solid #FEFAF5;
+}
+.main-footer__social-link:after,
+.main-footer__email-link:after {
+    display: block;
+    padding-bottom: 0.5rem;
+    content: '';
+    border-bottom: 4px solid #DB7A4E;
+    transform: scaleX(0);  
+    transition: transform 250ms ease-in-out;
+}
+.main-footer__social-link:hover:after,
+.main-footer__email-link:hover:after { 
+    transform: scaleX(1);
+}
 /* MAIN-FOOTER END */
 
 /* CARD */
@@ -141,6 +162,7 @@ body {
     box-sizing: border-box;
 }
 .card-container__card {
+    position: relative;
     width: 26%;
     height: 22.5rem;
     padding: 0 1rem 1rem 1rem;
@@ -149,5 +171,19 @@ body {
     border: 1px solid rgba(0, 0, 0, 0.2);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.2);
     text-decoration: none;
+    overflow: hidden;
+}
+.card-container__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #DB7A4E;
+    opacity: 0;
+    transition: opacity .5s ease-out;
+}
+.card-container__overlay:hover {
+    opacity: 0.4;
 }
 /* CARD END */

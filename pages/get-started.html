@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="../css/global.css" rel="stylesheet">
-    <link href="../css/destinations.css" rel="stylesheet">
-    <title>Travelsite &#124; Destinations &#124; Greece</title>
+    <link href="../css/get-started.css" rel="stylesheet">
+    <title>Travelsite &#124; Destinations &#124; Iceland</title>
 </head>
 <body>
     <header>
@@ -16,42 +16,55 @@
                 <li class="main-nav__list-item"><a class="main-nav__list-item-link" href="/">Home</a></li>
                 <li class="main-nav__list-item"><a class="main-nav__list-item-link" href="../pages/hawaii.html">Hawaii</a></li>
                 <li class="main-nav__list-item"><a class="main-nav__list-item-link" href="../pages/iceland.html">Iceland</a></li>
-                <li class="main-nav__list-item"><a class="main-nav__list-item-link main-nav__list-item-link--active" href="../pages/greece.html">Greece</a></li>
-                <li class="main-nav__list-item"><a class="main-nav__list-item-link" href="../pages/get-started.html">Get Started</a></li>
+                <li class="main-nav__list-item"><a class="main-nav__list-item-link" href="../pages/greece.html">Greece</a></li>
+                <li class="main-nav__list-item"><a class="main-nav__list-item-link main-nav__list-item-link--active" href="../pages/get-started.html">Get Started</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="destination destination--greece">
-            <h1 class="destination__heading">Greece</h1>
-            <div class="card-container">
-                <div class="card-container__card destination__card">
-                    <h3 class="card-container__card-heading destination__card-heading">Friday</h3>
-                    <ul class="destination__list">
-                        <li class="destination__list-item">Breakfast</li>
-                        <li class="destination__list-item">Lunch</li>
-                        <li class="destination__list-item">Dinner</li>
-                        <li class="destination__list-item">Dancing</li>
-                    </ul>
-                </div>
-                <div class="card-container__card destination__card">
-                    <h3 class="card-container__card-heading destination__card-heading">Saturday</h3>
-                    <ul class="destination__list">
-                        <li class="destination__list-item">Breakfast</li>
-                        <li class="destination__list-item">Lunch</li>
-                        <li class="destination__list-item">Dinner</li>
-                        <li class="destination__list-item">Dancing</li>
-                    </ul>
-                </div>
-                <div class="card-container__card destination__card">
-                    <h3 class="card-container__card-heading destination__card-heading">Sunday</h3>
-                    <ul class="destination__list">
-                        <li class="destination__list-item">Breakfast</li>
-                        <li class="destination__list-item">Lunch</li>
-                        <li class="destination__list-item">Dinner</li>
-                        <li class="destination__list-item">Dancing</li>
-                    </ul>
-                </div>
+        <section class="get-started">
+            <div class="get-started__details">
+                <h2 class="get-started__heading">Get Started</h2>
+                <p class="get-started__description">You've taken the first step. Simply fill in our contact form below and we will contact you soon!!</p>    
+            </div>
+            <div class="get-started__image-container">
+                <img class="get-started__image" src="../assets/images/envelope.png" alt="Email envelope" />
+            </div>
+        </section>
+        <section class="contact">
+            <h2 class="contact__heading">Contact Us</h2>
+            <div class="contact__form-container">
+                <form class="contact__form">
+                    <div class="contact__form-row-columns">
+                        <div class="contact__form-column">
+                            <label class="contact__label">Name</label>
+                            <input class="contact__input" name="name" type="text" required/>
+                        </div>
+                        <div class="contact__form-column">
+                            <label class="contact__label">Email</label>
+                            <input class="contact__input" name="email" type="email" required/>
+                        </div>
+                        <div class="contact__form-column contact__form-column--last">
+                            <label class="contact__label">Phone</label>
+                            <input class="contact__input" name="phone" type="phone" required/>
+                        </div>
+                    </div>
+                    <div class="contact__form-row">
+                        <label class="contact__label">Destination</label>
+                        <select class="contact__select">
+                            <option value="hawaii">Hawaii</option>
+                            <option value="iceland">Iceland</option>
+                            <option value="greece">Greece</option>
+                        </select>
+                    </div>
+                    <div class="contact__form-row">
+                        <label class="contact__label">Message</label>
+                        <textarea class="contact__textarea" name="message" rows="5"></textarea>
+                    </div>
+                    <div class="contact__form-row">
+                        <button class="contact__button">Send</button>
+                    </div>
+                </form>
             </div>
         </section>
     </main>

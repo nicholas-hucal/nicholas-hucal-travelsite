@@ -6,19 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./css/global.css" rel="stylesheet">
     <link href="./css/main.css" rel="stylesheet">
+    <link href="./css/responsive.css" rel="stylesheet">
     <title>Travelsite &#124; Welcome</title>
 </head>
 <body>
     <header>
         <nav class="main-nav">
             <a class="main-nav__home-link" href="/">Travel Site</a>
-            <ul class="main-nav__list">
-                <li class="main-nav__list-item"><a class="main-nav__list-item-link main-nav__list-item-link--active" href="/">Home</a></li>
-                <li class="main-nav__list-item"><a class="main-nav__list-item-link" href="./pages/hawaii.html">Hawaii</a></li>
-                <li class="main-nav__list-item"><a class="main-nav__list-item-link" href="./pages/iceland.html">Iceland</a></li>
-                <li class="main-nav__list-item"><a class="main-nav__list-item-link" href="./pages/greece.html">Greece</a></li>
-                <li class="main-nav__list-item"><a class="main-nav__list-item-link" href="./pages/get-started.html">Get Started</a></li>
-            </ul>
+            <input type="checkbox" class="main-nav__menu-button-open">
+            <div class="main-nav__expandable-menu">
+                <ul class="main-nav__list">
+                    <li class="main-nav__list-item"><a class="main-nav__list-item-link main-nav__list-item-link--active" href="/">Home</a></li>
+                    <li class="main-nav__list-item"><a class="main-nav__list-item-link" href="./pages/hawaii.html">Hawaii</a></li>
+                    <li class="main-nav__list-item"><a class="main-nav__list-item-link" href="./pages/iceland.html">Iceland</a></li>
+                    <li class="main-nav__list-item"><a class="main-nav__list-item-link" href="./pages/greece.html">Greece</a></li>
+                    <li class="main-nav__list-item"><a class="main-nav__list-item-link" href="./pages/get-started.html">Get Started</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
     <main>
@@ -81,6 +85,7 @@
                 <a class="main-footer__social-link main-footer__social-link--no-margin-right" href="https://twitter.com"><img class="main-footer__social-image" src="./assets/logos/icon-twitter.png"  alt="twitter Link" /></a>
             </div>
         </section>
-    </footer>    
+    </footer>   
+    </div> 
 </body>
 </html>

@@ -1,0 +1,151 @@
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (max-width: 991.99px) {
+    .main-nav__expandable-menu {
+        position: fixed;
+        top: 0;
+        left: -50vw;
+        display: block;
+        background-color: #fff;
+        border-left: 1px solid rgba(0, 0, 0, 0.2);
+        width: 50vw;
+        height: 100vh;
+    }
+    .main-nav__menu-button-open {
+        display: block;
+        appearance: none;
+        margin-top: 0;
+    }
+    .main-nav__menu-button-open:after {
+        display: block;
+        content: 'menu';
+        color: #335576;
+        font-size: 1.25rem;
+    }
+    .main-nav__list {
+        display: block;  
+        padding: 2rem 0 1rem;
+        text-align: center;
+        box-sizing: border-box; 
+    }
+    .main-nav__list-item {
+        padding-bottom: 1rem;
+    }
+    .main-nav__menu-button-open:checked ~ .main-nav__expandable-menu{
+        left: 0;
+        transition: all ease 0.5s;
+    }
+    .main-nav__menu-button-open:not(:checked) ~ .main-nav__expandable-menu{
+        left: -50vw;
+        transition: all ease 0.5s;
+    }
+    .hero {
+        background-image: url('../assets/images/hero.png');
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size: 50%;
+        display: block;
+        padding: 2rem 1rem;
+    }
+    .get-started {
+        background-image: url('../assets/images/envelope.png');
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size: 50%;
+        display: block;
+        padding: 2rem 1rem;
+    }
+    .hero__image-container,
+    .get-started__image-container {
+        display: none;
+    }
+    .hero__details,
+    .get-started__details {
+        width: 75%;
+    }
+    .main-nav {
+        padding: 1rem;
+    }
+    .recommendations,
+    .contact {
+        padding: 2rem 1rem 3rem 1rem;
+    }
+    .contact__form-container {
+        padding: 2rem 0rem;
+    }
+    .card-container {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 2rem 0.5rem;
+        box-sizing: border-box;
+        flex-wrap: wrap;
+    }
+    .card-container__card {
+        width: 100%;
+        padding: 0 0.5rem 1rem 0.5rem;
+        margin-bottom: 1rem;
+    }
+    .main-footer {
+        padding: 3rem 1rem 2.25rem 1rem;
+        flex-wrap: wrap;
+    }
+    .main-footer__column {
+        width: 100%;
+    }
+    .main-footer__social-links {
+        justify-content: flex-start;
+    }
+    .main-footer__hours-container {
+        justify-content: flex-start;
+    }
+    .destination {
+        padding: 1rem 1rem 3rem 1rem;
+    }
+    .contact__form-row-columns {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0.5rem;
+        box-sizing: border-box;
+    }
+    .contact__form-column {
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .destination {
+        padding: 1rem 3rem 3rem 3rem;
+    }
+    .hero,
+    .get-started {
+        padding: 2rem 3rem;
+    }
+    .recommendations,
+    .contact {
+        padding: 2rem 3rem 3rem 3rem;
+    }
+    .card-container__card {
+        width: 25%;
+        padding: 0 1.5rem 1rem 1.5rem;
+        margin-bottom: 1rem;
+    }
+    .main-footer {
+        padding: 3rem 3rem 2.25rem 3rem;
+        flex-wrap: wrap;
+    }
+    .contact__form-container {
+        padding: 2rem 0rem;
+    }
+    .main-nav {
+        padding: 1rem 3rem;
+    }
+    .card-container {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding: 2rem 0rem;
+        box-sizing: border-box;
+        flex-wrap: wrap;
+    }
+}

@@ -5,6 +5,9 @@
     justify-content: space-between;
 }
 .get-started__details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 50%;
 }
 .get-started__image-container {

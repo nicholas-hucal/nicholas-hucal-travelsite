@@ -38,21 +38,19 @@
         left: -50vw;
         transition: all ease 0.5s;
     }
-    .hero {
-        background-image: url('../assets/images/hero.png');
+    .hero,
+    .get-started {
         background-position: right;
         background-repeat: no-repeat;
         background-size: 50%;
         display: block;
-        padding: 2rem 1rem;
+        padding: 2rem 1rem 3rem 1rem;
+    }
+    .hero {
+        background-image: url('../assets/images/hero.png');
     }
     .get-started {
         background-image: url('../assets/images/envelope.png');
-        background-position: right;
-        background-repeat: no-repeat;
-        background-size: 50%;
-        display: block;
-        padding: 2rem 1rem;
     }
     .hero__image-container,
     .get-started__image-container {
@@ -97,6 +95,7 @@
     }
     .main-footer__hours-container {
         justify-content: flex-start;
+        flex-direction: column;
     }
     .destination {
         padding: 1rem 1rem 3rem 1rem;
@@ -119,7 +118,7 @@
     }
     .hero,
     .get-started {
-        padding: 2rem 3rem;
+        padding: 2rem 3rem 3rem 3rem;
     }
     .recommendations,
     .contact {

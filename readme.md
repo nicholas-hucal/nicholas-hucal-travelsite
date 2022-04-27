@@ -1,6 +1,4 @@
-# Name
-
-Travelsite - HTML and CSS
+# TravelSite
 
 ## Description
 
